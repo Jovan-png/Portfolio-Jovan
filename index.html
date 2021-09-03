@@ -8,30 +8,57 @@
 
     <title>Jovan Norrington's Portfilio Website!</title>
 </head>
+<script>
+    var a; function show_hide(){
+        if(a==1) {
+            document.getElementById("btn1").style.display="inline";
+            return a=0;
+        }
+        else{
+            document.getElementById("btn1").style.display="none";
+            return a=1
+        }
+    }
+</script>
 <header class="header">
     <ul>
         <h1>Jovan </h1>
         <h1 class="N">N</h1><h1>orrington</h1>
-        <li class="project-header">Projects</li>
-        <li class="contact-header">Contact</li>
+        <li class="project-header"><a href="#projects"/>Projects</li></a>
+        <li class="contact-header"><a href="#contact-me">Contact</li></a>
     </ul>
 </header>
 <section class="hero">
 <div>
-    <h2>About Me</h2>
-    <p>  </p>
+    <button  onclick=""type="button" class="btn1">About Me</button></a>
+    <p> Just a bunch of Random text that no one will see but me </p>
 </div>
 <div class="jovan">
     <img src="assets/images/jovan.jpg">
 </div>
 
 </section>
-<section class="projects">
+<section id="projects"class="projects">
     <h2>Projects</h2>
     <hr>
+    <div>
+        <h3> Run Buddy </h3>
+    </div>
+    <div>
+        <h3> Horiseon</h3>
+    </div>
+    <div>
+        <h3>THIS WEBSITE</h3>
+    </div>
     
 </section>
-<footer class="contact-me">
+<footer id=contact-me class="contact-me">
+    <h2>Contact Me</h2>
+    <ul class="contact-links">
+    <li>Number</li>
+    <li>Email</li>
+    <li>Linkedin</li>
+    </ul>
 
 
 </footer>

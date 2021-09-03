@@ -7,6 +7,14 @@
 :root {
   --secondary-color: #6ca4d4;
 }
+a:link {
+  text-decoration: none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
 .header {
   background-color: #fff;
   padding: 20px;
@@ -23,12 +31,27 @@
   float: right;
   list-style: none;
   background-color: #fff;
-  margin: 0px 40px 0 0;
-  padding: 10px 10px 10px 10px;
+  margin: 0px 40px 18px 0;
+  padding: 0px 15px 15px 15px;
   position: relative;
-  border-style: solid;
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header ul li::after {
+  background-color: var(--secondary-color);
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+}
+.header ul li:hover {
+  color: #3b3b3b;
+}
+.header ul li:hover::after {
+  width: 100%;
+  transition: 0.4s;
 }
 .header ul .N {
   color: var(--secondary-color);
@@ -47,10 +70,14 @@
 .hero div {
   margin: auto;
 }
-.hero h2 img {
+.hero div img {
   display: inline;
+  box-shadow: 50px 1px 1px;
 }
-.hero h2 {
+.hero div img:hover {
+  border-radius: unset;
+}
+.hero button {
   font-size: large;
   float: left;
   background-color: #fff;
@@ -58,8 +85,15 @@
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .hero p {
   display: none;
+}
+.hero h2 p:hover {
+  display: block;
+}
+.hero div .btn1 img:hover {
+  border-radius: unset;
 }
 .hero img {
   height: 250px;
@@ -80,9 +114,29 @@
   margin-left: 25%;
   margin-top: 5px;
 }
+.projects div {
+  margin: 100px 100px 100px 100px;
+  max-width: 50%;
+  display: flex;
+  text-align: center;
+}
+.projects div .run-buddy {
+  float: left;
+}
 .contact-me {
-  height: 500px;
+  height: 100px;
   background-color: burlywood;
+}
+.contact-me h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.contact-links li {
+  list-style: none;
+  margin-right: 200px;
+  margin-left: 200px;
+  text-align: center;
+  float: left;
 }
 @media only screen and (max-width: 600px) {
   main {
