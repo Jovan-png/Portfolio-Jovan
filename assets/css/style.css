@@ -71,7 +71,6 @@ a:visited {
   margin: auto;
 }
 .hero div img {
-  display: inline;
   box-shadow: 50px 1px 1px;
 }
 .hero div img:hover {
@@ -94,6 +93,7 @@ a:visited {
 }
 .hero div .btn1 img:hover {
   border-radius: unset;
+  transition: 0.3;
 }
 .hero img {
   height: 250px;
@@ -125,7 +125,7 @@ a:visited {
 }
 .contact-me {
   height: 100px;
-  background-color: burlywood;
+  background-color: var(--secondary-color);
 }
 .contact-me h2 {
   text-align: center;
