@@ -18,21 +18,27 @@ a:visited {
 .header {
   background-color: #fff;
   padding: 20px;
+  position: sticky;
+  position: -webkit-sticky;
 }
 .header h1 {
-  display: inline-block;
+  display: inline-flex;
   color: black;
   border-style: 1px solid var(--secondary-color);
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-color: var(--secondary-color);
+  flex-wrap: wrap;
+  flex: 1;
+  margin-right: 10px;
 }
+
 .header ul li {
   float: right;
   list-style: none;
   background-color: #fff;
   margin: 0px 40px 18px 0;
-  padding: 0px 15px 15px 15px;
+  padding: 0px 5px 15px 1px;
   position: relative;
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -55,6 +61,7 @@ a:visited {
 }
 .header ul .N {
   color: var(--secondary-color);
+  margin-right: 0;
 }
 .hero {
   height: 600px;
@@ -65,13 +72,13 @@ a:visited {
   background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
-  box-shadow: 0px 1px 1px 5px;
 }
 .hero div {
   margin: auto;
 }
 .hero div img {
   box-shadow: 10px 3px 8px;
+  min-width: 50px;
 }
 .hero div img:hover {
   border-radius: unset;
@@ -106,48 +113,31 @@ a:visited {
   margin-left: 25%;
   margin-top: 5px;
 }
-.projects {
-  height: 500px;
-  text-align: center;
-  padding-bottom: 2px var(--secondary-color);
-  font-size: 25px;
-  margin-top: 10px;
-}
-.projects hr {
-  color: var(--secondary-color);
-  background-color: var(--secondary-color);
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 5px;
-}
-.projects div {
-  margin: 100px 100px 100px 100px;
-  max-width: 50%;
-  display: flex;
-  float: left;
-  justify-content: space-around;
-}
 
 .contact-me {
   height: 100px;
   background-color: var(--secondary-color);
+  border: 2px solid black;
 }
 .contact-me h2 {
   text-align: center;
   padding-bottom: 20px;
 }
 .contact-links li {
-  list-style: none;
-  margin-right: 200px;
-  margin-left: 200px;
-  text-align: center;
   float: left;
+  list-style: none;
+  display: flex;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  border: 5px solid blue;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 768px) {
   main {
     flex-direction: column;
+    display: flex;
   }
-  .header {
-    flex-wrap: wrap;
+  .hero div img {
+    min-width: 50px;
   }
 }
