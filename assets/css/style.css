@@ -71,7 +71,7 @@ a:visited {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(/assets/images/hero.jpg);
+  background-image: url("../images/hero.jpg");
   background-size: cover;
 }
 .hero div {
