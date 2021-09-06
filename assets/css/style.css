@@ -65,11 +65,10 @@ a:visited {
 }
 .hero {
   height: 600px;
-  background-image: url(/assets/images/hero-image.jpg);
+  background-image: url(/assets/images/hero-image2.jpg);
   background-size: cover;
   background-position: 80%;
   width: 100%;
-  background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
