@@ -69,12 +69,12 @@ a:visited {
 }
 .hero {
   height: 600px;
-  background-image: url(/assets/images/hero-image2.jpg);
-  background-size: cover;
-  background-position: 80%;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  background-image: url(/assets/images/heroimg.png);
+  background-size: cover;
+  background-position: 80%;
 }
 .hero div {
   margin: auto;
