@@ -17,7 +17,6 @@ a:visited {
   color: black;
 }
 .header {
-  background-color: #fff;
   padding: 20px;
   position: -webkit-sticky;
   position: sticky;
@@ -39,7 +38,6 @@ a:visited {
 .header ul li {
   float: right;
   list-style: none;
-  background-color: #fff;
   margin: 0px 40px 18px 0;
   padding: 0px 5px 15px 1px;
   position: relative;
@@ -112,7 +110,6 @@ a:visited {
   text-align: center;
   padding-bottom: 2px var(--secondary-color);
   font-size: 25px;
-  background-color: #fff;
 }
 .about hr {
   color: var(--secondary-color);
