@@ -36,7 +36,6 @@ a:visited {
   flex: 1;
   margin-right: 10px;
 }
-
 .header ul li {
   float: right;
   list-style: none;
@@ -72,7 +71,7 @@ a:visited {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-image: url(/assets/images/hero-image.JPG);
+  background-image: url("/assets/images/hero.jpg");
   background-size: cover;
   background-position: 80%;
 }
