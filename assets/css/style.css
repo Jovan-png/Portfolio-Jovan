@@ -72,6 +72,7 @@ a:visited {
   background-repeat: no-repeat;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
 }
 .hero div {
   margin: auto;
@@ -99,12 +100,18 @@ a:visited {
   width: 250px;
   border-radius: 10px;
 }
+.section {
+  display: inline;
+}
 .about {
   height: 500px;
+  display: inline;
+}
+.about h2 {
   text-align: center;
   padding-bottom: 2px var(--secondary-color);
   font-size: 25px;
-  margin-top: 10px;
+  background-color: #fff;
 }
 .about hr {
   color: var(--secondary-color);
@@ -113,31 +120,86 @@ a:visited {
   margin-left: 25%;
   margin-top: 5px;
 }
-
-.contact-me {
-  height: 100px;
-  background-color: var(--secondary-color);
-  border: 2px solid black;
+.about .about-p {
+  margin-top: 5px;
 }
+
+.about .about-p p {
+  overflow: auto;
+  height: 400px;
+  text-align: center;
+}
+.projects {
+  height: 500px;
+  background-color: var(--secondary-color);
+  display: inline;
+  width: 100%;
+}
+.projects hr {
+  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 5px;
+}
+.projects h2 {
+  text-align: center;
+}
+.projects div {
+  display: inline;
+}
+.projects .run-buddy img {
+  width: 33.33%;
+}
+.projects .run-buddy h3 {
+  text-align: center;
+  color: black;
+}
+
 .contact-me h2 {
   text-align: center;
   padding-bottom: 20px;
 }
+
 .contact-links li {
-  float: left;
-  list-style: none;
-  display: flex;
-  color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  border: 5px solid blue;
+  list-style: none;
+  background-color: #fff;
+  margin: 0px 100px 18px 150px;
+  padding: 0px 5px 15px 1px;
+  position: relative;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  float: left;
 }
-@media only screen and (min-width: 768px) {
+.contact-links li::after {
+  background-color: var(--secondary-color);
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: 0px;
+}
+.contact-links li:hover {
+  color: #3b3b3b;
+}
+.contact-links li:hover::after {
+  width: 100%;
+  transition: 0.4s;
+}
+@media only screen and (max-width: 768px) {
   main {
-    flex-direction: column;
-    display: flex;
+    flex-direction: columnm;
   }
-  .hero div img {
-    min-width: 50px;
+
+  .about .about-img img {
+    height: 300px;
+    width: 240px;
+  }
+  .about .about-img p {
+    height: 300px;
+    width: 240px;
   }
 }
