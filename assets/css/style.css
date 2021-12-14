@@ -1,5 +1,4 @@
-/*Changed Default styling */
-* {
+Changed Default styling * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -7,7 +6,7 @@
   background-color: none;
 }
 :root {
-  --secondary-color: #6ca4d4;
+  --secondary-color: #c4c4c4;
 }
 a:link {
   text-decoration: none;
@@ -58,6 +57,7 @@ a:visited {
 }
 .header ul li:hover {
   color: #3b3b3b;
+  transition: 0.8s;
 }
 .header ul li:hover::after {
   width: 100%;
@@ -81,6 +81,7 @@ a:visited {
 .hero div img {
   box-shadow: 10px 3px 8px;
   min-width: 50px;
+  transition: 0.8s;
 }
 .hero div img:hover {
   height: 350px;
@@ -92,6 +93,7 @@ a:visited {
   color: #fff;
   font-size: 50px;
   text-shadow: 2px black;
+  transition: 0.8s;
 }
 .hero p:hover {
   font-size: 80px;
