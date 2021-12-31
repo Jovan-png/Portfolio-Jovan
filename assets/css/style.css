@@ -1,4 +1,4 @@
-Changed Default styling * {
+* {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -54,6 +54,7 @@ a:visited {
   width: 0;
   left: 0;
   bottom: 0px;
+  transition: 0.4s;
 }
 .header ul li:hover {
   color: #3b3b3b;
@@ -79,13 +80,8 @@ a:visited {
   margin: auto;
 }
 .hero div img {
-  box-shadow: 10px 3px 8px;
+  box-shadow: 1px 1px 15px rgb(0, 0, 0);
   min-width: 50px;
-  transition: 0.8s;
-}
-.hero div img:hover {
-  height: 350px;
-  width: 350px;
   transition: 0.8s;
 }
 
@@ -96,7 +92,7 @@ a:visited {
   transition: 0.8s;
 }
 .hero p:hover {
-  font-size: 80px;
+  font-size: 55px;
   transition: 0.8s;
 }
 .hero h3 {
@@ -117,6 +113,7 @@ a:visited {
   display: inline;
 }
 .about h2 {
+  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   padding-bottom: 2px var(--secondary-color);
   font-size: 25px;
@@ -134,6 +131,7 @@ a:visited {
 }
 
 .about .about-p p {
+  font-family: Arial, Helvetica, sans-serif;
   height: 200px;
   text-align: center;
 }
@@ -305,7 +303,57 @@ a:visited {
     width: 240px;
   }
   .hero p:hover {
-    font-size: 60px;
+    font-size: 40px;
     transition: 0.8s;
   }
+}
+/* Language Card */
+.langh1 {
+  text-align: center;
+}
+.language-card-container {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.language-card {
+  background-color: #fff;
+  height: 55px;
+  width: 55px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 12px rgb(185, 185, 185);
+  margin: 10px 10px 10px 10px;
+  transition: 0.5s;
+}
+.language-card img {
+  margin-top: 3px;
+  margin-left: 2px;
+  height: 50px;
+  width: 50px;
+  transition: 0.5s;
+}
+.language-card:hover {
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  transition: 0.5s;
+}
+.language-card img:hover {
+  margin-top: 3px;
+  margin-left: 2px;
+  height: 55px;
+  width: 55px;
+  transition: 0.5s;
+}
+.section {
+  display: inline;
+}
+
+/* Language Card */
+
+p-card-container {
+  width: 500px;
+  height: 600px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 12px;
 }
