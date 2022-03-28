@@ -44,6 +44,7 @@ a:visited {
   position: relative;
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 2px 2px 1px rgb(167, 167, 167);
 }
 .header ul li::after {
   background-color: var(--secondary-color);
