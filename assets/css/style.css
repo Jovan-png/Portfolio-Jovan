@@ -223,28 +223,14 @@ a:visited {
 #portfolio img {
   width: 450px;
 }
-.footer hr {
-  color: var(black);
-  background-color: var(--secondary-color);
-  width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-top: 1px;
-  height: 1px;
-  border-color: var(--secondary-color);
-  margin-bottom: 10px;
-}
-.footer h2 {
-  text-align: left;
+
+.footer  {
   width: 100%;
-  display: inl;
-}
-.footer ul {
-  width: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .footer ul li {
-  float: right;
   list-style: none;
   background-color: #fff;
   margin: 0px 100px 18px 0;
@@ -602,4 +588,3 @@ body {
 
 .boxes{
   background-color: #f4f4f4;
-}
