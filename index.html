@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/newstyle.scss">
     <link rel="icon" href="./assets/images/E394860E-0C29-49CE-834B-E1BDED997543.jpg">
     <title>Jovan Norrington's Portfilio Website!</title>
 </head>
@@ -19,63 +20,106 @@
         </ul>
     
     </header>
-<div>
+<div class="fade-in">
     
     <p>"I have No Idea <br>What I'm Doing."</p>
             <h3>~ Jovan while making this website.</h3>
 </div>
-<div class="jovan">
+<div class="jovan fade-in">
     <img src="assets/images/jovan.jpg">
 </div>
 
 </section>
-<section id="about"class="about">
-    <h2>About Me</h2>
-    <hr>
-    <div class="about-p">
-        <p>My my full  name is, Jovan Dupree Norrington Jr. I was born on the 15th of January in the year 1999.<br> I'm 22 :)
+<div class="home-more-stuff">
+    <div class="more-stuff-grid" id="about" >
+        <img
+          src="/assets/images/fam.png"
+          alt=""
+          class="slide-in from-left"
+        />
+        <h1 class="fade-in from-left"> About Me</h1>
+        <p class="slide-in from-right">
+            My my full  name is, Jovan Dupree Norrington Jr. I was born on the 15th of January in the year 1999.<br> I'm 22 :)
             I started messing  with code when I was younger making bot scripts and things on online games I use to play like ClubPenguin.<br>
             I'm currently learning html,css, javascript, and much more. Coding is so exciting and i'm glad im taking this leap into the field.<br>
             My older sister conviced me to enroll in these courses and, I know I wont regret my choice!<br>
             I've been thinking a lot and the company I would want to work for the most is Microsoft!
- </p>
-</section>
-
-        <div class="p-card">
-            <div class="p-card-container">
-                <div class="p-card">
-
-                </div>
-            </div>
-            <div class="p-card-container">
-                <div class="p-card">
-
-                </div>
-            </div>
+        </p>
+      </div>
+      </div>
+      <div class="home-about">
+        <div class="columns">
+          <div class="col fade-in">
+            <h3>HTML/CSS</h3>
+            <p>
+              
+            </p>
+          </div>
+          <div class="col fade-in">
+            <h3>JavaScript</h3>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatibus minima quo beatae eius blanditiis officiis.
+            </p>
+          </div>
+          <div class="col fade-in">
+            <h3>C#</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              quasi quis doloribus quia illum laudantium.
+            </p>
+          </div>
         </div>
+      </div>
 
-<section id="projects"class="projects">
-    <h2>Projects</h2>
-    <hr>
+     <section class="boxes" id="projects">
+      <div class="row slide-in from-left">
+        <div class="col p-2">
+          <h2>GiveAway App</h2>
+          <p>In ut quam vitae odio lacinia tincidunt. Nam commodo suscipit quam. Nam adipiscing. Aliquam lobortis. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+          <button type="button" class="show-col">Read More</button>
+        </div>
+        <div class="col">
+          <img src="/assets/images/giveaway1.png" />
+        </div>
+        <div class="col p-2">
+          <p>This Full-Stack App is a free-to-use website that is a platform for individuals to give away items they no longer need. The user(s) need to sign in to create and comment on listings. Once signed in, the user(s) can create a personal profile to share information about themselves, indicate the availability of their items, or delete their listing.</p>
+          <button type="button" class="close-col">Close</button>
+        </div>
+      </div>
+      
+      <div class="row slide-in from-right">
+        <div class="col p-2">
+          <h2>Finance Assistant</h2>
+          <p>In ut quam vitae odio lacinia tincidunt. Nam commodo suscipit quam. Nam adipiscing. Aliquam lobortis. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+          <button type="button" class="show-col">Read More</button>
+        </div>
+        <div class="col">
+          <img src="/assets/images/finance assistant.png" />
+        </div>
+        <div class="col p-2">
+          <p>Praesent ut ligula non mi varius sagittis. Praesent venenatis metus at tortor pulvinar varius. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent venenatis metus at tortor pulvinar varius.</p>
+          <button type="button" class="close-col">Close</button>
+        </div>
+      </div>
 
-    
-    <section class="box">
-        <header>GiveAway Fullstack Website</header>
-        <a href="https://safe-beyond-95818.herokuapp.com/"><img src="./assets/images/giveaway.png" alt="Finance assistant webpage" /></a>
-      </section>
-    <section class="box">
-        <header>Finance Assistant</header>
-        <a href="https://jacobryanhanson.github.io/finance-assistant/"><img src="./assets/images/finance assistant.png" alt="Finance assistant webpage" /></a>
-      </section>
-      <section class="box">
-        <header>Raffler</header>
-        <a href="https://github.com/Jovan-png/the-raffler"><img src="./assets/images/raffler.png" alt="Raffler website screenshot" /></a>
-      </section>
 
-      <section id="projects"class="projects">
-        <h2>Contact Me</h2>
-        <hr>
-</section>
+      <div class="row slide-in from-left">
+        <div class="col p-2">
+          <h2>Raffler</h2>
+          <p>In ut quam vitae odio lacinia tincidunt. Nam commodo suscipit quam. Nam adipiscing. Aliquam lobortis. Cras ultricies mi eu turpis hendrerit fringilla.</p>
+          <button type="button" class="show-col">Read More</button>
+        </div>
+        <div class="col">
+          <img src="/assets/images/raffler.png" />
+        </div>
+        <div class="col p-2">
+          <p>Praesent ut ligula non mi varius sagittis. Praesent venenatis metus at tortor pulvinar varius. Proin sapien ipsum, porta a, auctor quis, euismod ut, mi. Phasellus leo dolor, tempus non, auctor et, hendrerit quis, nisi. Praesent venenatis metus at tortor pulvinar varius.</p>
+          <button type="button" class="close-col">Close</button>
+        </div>
+      </div>
+    </section>
+
 <footer  id="contact-me"class="footer">
     <ul>
         <li class="number">(414)-928-0367</li>
@@ -83,6 +127,8 @@
         <li class="linkedin"><a href="https://www.linkedin.com/in/jovan-norrington-jr-0a97a821b/">Linkedin</li></a>
     </ul>
 </footer>
+<script src="./assets/buddy.js"></script>
+
 </body>
 </html> 
 
