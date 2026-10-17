@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   font-style: normal;
-  background-color: none;
 }
 :root {
   --secondary-color: #c4c4c4;
@@ -15,9 +14,8 @@ a:link {
 a:visited {
   text-decoration: none;
   color: rgb(255, 255, 255);
-} /*The Header Section And List */
+}
 .header {
-  background-color: rgba(red, green, blue, 0);
   padding: 20px;
   position: -webkit-sticky;
   position: sticky;
@@ -29,7 +27,6 @@ a:visited {
 .header h1 {
   display: inline-flex;
   color: #fff;
-  border-style: 1px solid var(--secondary-color);
   text-decoration-style: solid;
   text-decoration-color: var(--secondary-color);
   flex-wrap: wrap;
@@ -64,10 +61,6 @@ a:visited {
   width: 100%;
   transition: 0.4s;
 }
-.header ul .N {
-  color: #fff;
-  margin-right: 0;
-} /*The Start Of Hero Section  */
 .hero {
   height: 600px;
   width: 100%;
@@ -90,7 +83,6 @@ a:visited {
 .hero p {
   color: #fff;
   font-size: 50px;
-  text-shadow: 2px black;
   transition: 0.8s;
 }
 .hero p:hover {
@@ -107,36 +99,6 @@ a:visited {
   width: 250px;
   border-radius: 10px;
 }
-.section {
-  display: inline;
-}
-.about {
-  height: 500px;
-  display: inline;
-}
-.about h2 {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  padding-bottom: 2px var(--secondary-color);
-  font-size: 25px;
-  background-color: #fff;
-}
-.about hr {
-  color: var(--secondary-color);
-  background-color: var(--secondary-color);
-  width: 50%;
-  margin-left: 25%;
-  margin-top: 5px;
-}
-.about .about-p {
-  margin-top: 5px;
-}
-
-.about .about-p p {
-  font-family: Arial, Helvetica, sans-serif;
-  height: 200px;
-  text-align: center;
-}
 
 .home-about {
   padding: 4em 0;
@@ -150,78 +112,6 @@ a:visited {
 
 .col + .col {
   margin-left: 1.5em;
-}
-.projects h2 {
-  display: inline;
-  color: black;
-  width: 100%;
-  text-align: center;
-}
-.projects p {
-  width: 100%;
-  height: 50px;
-  text-align: center;
-}
-
-.projects img {
-  height: 400px;
-  width: 400px;
-}
-
-.projects .Portfolio img {
-  display: flex;
-  height: 250px;
-  width: 300px;
-}
-.projects .horiseon h3 {
-  text-align: center;
-}
-.projects .run-buddy h3 {
-  text-align: center;
-  color: black;
-}
-.projects .Portfolio h3 {
-  text-align: center;
-  color: black;
-}
-/*Project boxes */
-.box {
-  flex: 0 1 1;
-  padding: 5px;
-  text-align: center;
-  border-style: solid;
-  border-width: 2px;
-  display: inline;
-  margin-right: 200px;
-  margin: 10px 0 10px 10px;
-  box-shadow: 1px 1px 10px;
-  max-width: fit-content;
-  max-height: fit-content;
-}
-
-.box:hover {
-  border-color: #6ca4d4;
-  border-width: 3px;
-  transition: 0.3s;
-}
-
-.box header {
-  padding: 20px;
-  background: var(--secondary-color);
-  color: #fff;
-}
-
-.box img {
-  width: 500px;
-  display: inline;
-}
-.box #run-buddy {
-  width: 500px;
-  min-width: 400px;
-  display: inline;
-}
-#portfolio img {
-  width: 450px;
 }
 
 .footer  {
@@ -256,110 +146,31 @@ a:visited {
   width: 100%;
   transition: 0.4s;
 }
-.footer ul .N {
-  color: var(--secondary-color);
-  margin-right: 0;
-}
-#Heads {
-  color: white;
-}
-/*Optimization for mobile screens */
+
 @media only screen and (max-width:2000px) {
   .hero {
     height: 1000px;
     width: 100%;
     transition: .5s;
-}
+  }
 }
 @media only screen and (min-width: 928px) {
-    .hero {
-      height: 700px;
-      width: 100%;
-      transition: 1s;
+  .hero {
+    height: 700px;
+    width: 100%;
+    transition: 1s;
   }
 }
 @media only screen and (max-width: 768px) {
-  main {
-    flex-direction: columnm;
-    flex-wrap: wrap;
-  }
   .header {
     position: relative;
     border: none;
     box-shadow: none;
   }
-  .projects .poj {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .contact-me {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .about .about-img img {
-    height: 300px;
-    width: 240px;
-  }
-  .about .about-img p {
-    height: 300px;
-    width: 240px;
-  }
   .hero p:hover {
     font-size: 40px;
     transition: 0.8s;
   }
-}
-
-/* Giveaway */
-
-.G-Items{
-  height: 700px;
-align-items: center;
-text-align: center;
-}
-
-/* Giveaway */
-/* 
-sliding items */
-.item-1, 
-.item-2 {
-	top: 2em;
-  width: 60%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
-
-	animation-duration: 20s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-}
-
-.item-1{
-	animation-name: anim-1;
-}
-
-.item-2{
-	animation-name: anim-2;
-}
-
-
-@keyframes anim-1 {
-	0%, 8.3% { left: -100%; opacity: 0; }
-  8.3%,25% { left: 25%; opacity: 1; }
-  33.33%, 100% { left: 110%; opacity: 0; }
-}
-
-@keyframes anim-2 {
-	0%, 33.33% { left: -100%; opacity: 0; }
-  41.63%, 58.29% { left: 25%; opacity: 1; }
-  66.66%, 100% { left: 110%; opacity: 0; }
-}
-
-/* 
-sliding items */
-/* Language Card */
-.langh1 {
-  text-align: center;
 }
 
 .fade-in{
@@ -371,23 +182,6 @@ sliding items */
   opacity: 1;
 }
 
-.section {
-  display: inline;
-}
-
-@keyframes transitionIn{
-  from{
-    opacity: 0;
-    transform: rotateX(-10deg);
-
-  }
-
-  to{
-    opacity: 0;
-    transform: rotateX(0);
-
-  }
-}
 .more-stuff-grid {
   background: #f4f4f4;
   padding: 4em 0;
@@ -397,7 +191,6 @@ sliding items */
   grid-template-columns: minmax(1em, 1fr) repeat(2, minmax(200px, 400px)) minmax(1em, 1fr);
   font-family: Arial, Helvetica, sans-serif;
 
-
 }
 .more-stuff-grid h1{
   position: absolute;
@@ -405,15 +198,14 @@ sliding items */
   left: 50%;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  
 
 }
 .home-more-stuff{
   position: relative;
 }
 .more-stuff-grid img{
- height: 300px;
- box-shadow: 1px 2px 10px 1px rgb(109, 109, 109);
+  height: 300px;
+  box-shadow: 1px 2px 10px 1px rgb(109, 109, 109);
 }
 .from-left {
   grid-column: 2 / 3;
@@ -432,7 +224,7 @@ sliding items */
   transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
   transition: opacity 250ms ease-in, transform 400ms ease-in;
   transition: opacity 250ms ease-in, transform 400ms ease-in,
-    -webkit-transform 400ms ease-in;
+  -webkit-transform 400ms ease-in;
   opacity: 0;
 }
 
@@ -442,51 +234,16 @@ sliding items */
   transform: translateX(0);
   opacity: 1;
 }
-/* Language Card */
 
-p-card-container {
-  width: 500px;
-  height: 600px;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 1px 1px 12px;
-}
-
-
-.Project-C{
-  height: 600px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #f4f4f4;
-
-}
-.Project-C h1{
-  text-align: center;
-  color: #769e7c;
-}
-
-.Project-C p{
-  margin-left: 3rem;
-}
-
-.Project-C img{
-  height: 300px;
-  width: 500px;
-  box-shadow: 1px 1px 8px 1px;
-  margin-left: 3rem;
-}
-
-/* General Resets */
-* {
-  box-sizing: border-box;
-}
 body {
   font-family: "Arial", sans-serif;
   line-height: 1.4;
 }
 .row {
- /* flex stuff */
+
   display: flex;
   flex-wrap: wrap;
- /* general styling */
+
   overflow: hidden;
   margin: 3rem auto;
   padding: 2rem 1rem;
@@ -494,32 +251,31 @@ body {
   background: #eee;
 }
 .row .col {
- /* this is the flexbox stuff */
+
   display: flex;
   align-items: flex-start;
- /* this is aligning the content to the left of the box */
+
   justify-content: center;
- /* this vertically aligns all content in the center of the box */
+
   flex-direction: column;
- /* this makes all the content stack within the box */
+
   flex: 0 0 calc(100% - 2rem);
   max-width: calc(100% - 2rem);
- /* this flex and max-width above make the cols full width for mobile etc. you'll see where I set it to 50% for browser width above 767.98px */
- /* general styling */
+
   margin: 0 1rem;
   background: #fff;
- /* takes care of the smooth slide */
+
   transition: transform 0.5s ease-in-out;
 }
 .row .col.p-2 {
   padding: 2rem;
- /* just a class for padding on the boxes without an image */
+
 }
 .row .col img {
   width: 100%;
   height: 100%;
   object-fit: cover;
- /* this makes the image fill the box proportionately */
+
 }
 .row .col button {
   display: inline-block;
@@ -531,61 +287,248 @@ body {
   font-weight: 700;
   color: #fff;
 }
-/* ipads and desktops */
+
 @media (min-width: 768px) {
   .row {
     flex-wrap: nowrap;
-   /* this makes the boxes span across without wrapping to a new line */
-   /* when button is clicked, add an active class to the row */
-   /* this stuff is just to show you a fun way to switch the order of the columns without actually doing it in HTML. if you look at the html the two rows are exactly the same structure but a fun "order:" with flex-box allows you to change that. */
-   /* end order stuff */
- }
+
+  }
   .row .col {
-   /* these two keep them all at 50% side and the -2rem is to account for the margins i set for spacing on the cols */
+
     flex: 0 0 calc(50% - 2rem);
     max-width: calc(50% - 2rem);
- }
+  }
   .row.box-active .col {
     transform: translateX(calc(-100% - 2rem));
-   /* the -2rem in the calc is accounting for the column margins for spacing. You wouldn't need those if you want your boxes without spacers */
- }
+
+  }
   .row.box-active .col:last-of-type {
     transform: translateX(calc(-100% - 2rem));
- }
+  }
   .row:nth-child(even) .col {
     transform: translateX(calc(-100% - 2rem));
- }
+  }
   .row:nth-child(even) .col:nth-child(1) {
     order: 3;
- }
+  }
   .row:nth-child(even) .col:nth-child(2) {
     order: 2;
- }
+  }
   .row:nth-child(even) .col:last-of-type {
     transform: translateX(calc(-100% - 2rem));
     order: 1;
- }
+  }
   .row:nth-child(even).box-active .col {
     transform: translateX(0);
- }
+  }
   .row:nth-child(even).box-active .col:last-of-type {
     transform: translateX(0);
- }
+  }
 }
-/* Responsive stacks for mobile and ipads etc. can change this width size to whatever you prefer */
+
 @media (max-width: 767.98px) {
   .row {
     height: calc(600px + 6rem);
- }
+  }
   .row .col {
     margin-bottom: 2rem;
     height: 300px;
- }
+  }
   .row.box-active .col {
     transform: translateY(calc(-100% - 2rem));
- }
+  }
 }
 
 .boxes{
   background-color: #f4f4f4;
+}
+
+.header ul .brand {
+  float: left;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
+.header ul .brand::after {
+  content: none;
+}
+
+.header .brand h1 {
+  display: block;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.header li > a {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.home-about .col,
+.more-stuff-grid > * {
+  min-width: 0;
+}
+
+.home-more-stuff,
+.boxes {
+  overflow-x: clip;
+}
+
+@media (max-width: 927px) {
+  .hero {
+    height: auto;
+    min-height: 650px;
+    padding: 0 1rem 2.5rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero .header {
+    position: relative;
+    width: 100%;
+    padding: 1.25rem 0;
+  }
+
+  .header ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .header ul .brand {
+    flex-basis: 100%;
+    float: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .header h1 {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+    margin-right: 0.25rem;
+  }
+
+  .header ul li {
+    float: none;
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+  }
+
+  .header li:not(.brand) > a {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.25rem;
+  }
+
+  .hero p,
+  .hero p:hover {
+    font-size: clamp(1.8rem, 6vw, 3rem);
+  }
+
+  .hero h3 {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .hero img {
+    width: min(250px, 70vw);
+    height: auto;
+  }
+
+  .more-stuff-grid {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 2rem 1.25rem;
+    gap: 1.5rem;
+  }
+
+  .more-stuff-grid > * {
+    grid-column: 1;
+  }
+
+  .more-stuff-grid h1 {
+    position: static;
+    grid-row: 1;
+  }
+
+  .more-stuff-grid img {
+    height: auto;
+    width: min(100%, 400px);
+    justify-self: center;
+  }
+
+  .home-about {
+    padding: 2rem 1.25rem;
+  }
+
+  .columns {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .columns .col + .col {
+    margin-left: 0;
+  }
+
+  .footer ul li {
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero > div {
+    margin: 0;
+  }
+
+  .row {
+    height: auto;
+    margin: 1.5rem auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .row .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: auto;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .row .col.p-2 {
+    padding: 1.25rem;
+    overflow-wrap: anywhere;
+  }
+
+  .row .col img {
+    height: auto;
+  }
+
+  .row .col:last-of-type {
+    display: none;
+  }
+
+  .row.box-active .col {
+    transform: none;
+  }
+
+  .row.box-active .col:last-of-type {
+    display: flex;
+  }
+
+  .row.box-active .show-col {
+    display: none;
+  }
 }
