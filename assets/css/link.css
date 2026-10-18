@@ -166,3 +166,33 @@ h4 {
   cursor: normal;
   text-align: center;
 }
+
+/* Preserve the social page's appearance with semantic headings. */
+.social-name {
+  color: #000;
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  text-align: center;
+  margin: 1em 0;
+  cursor: auto;
+}
+.social-handle {
+  color: #000;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  margin: 1.33em 0;
+}
+:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #fff;
+}
+.icon { display: inline-flex; min-width: 44px; min-height: 44px; align-items: center; justify-content: center; }
+.Top-Section { width: min(100%, 600px); }
+.icon-container { width: 100%; box-sizing: border-box; gap: 1rem; flex-wrap: wrap; }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}

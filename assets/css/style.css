@@ -66,7 +66,7 @@ a:visited {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-image: url("../images/hero.jpg");
+  background-image: linear-gradient(rgb(0 0 0 / 65%), rgb(0 0 0 / 65%)), url("../images/hero.jpg");
   background-size: cover;
   position: relative;
   color: #fff;
@@ -89,7 +89,7 @@ a:visited {
   font-size: 55px;
   transition: 0.8s;
 }
-.hero h3 {
+.hero .quote-credit {
   color: #fff;
   margin-left: 100px;
 }
@@ -174,7 +174,7 @@ a:visited {
 }
 
 .fade-in{
-  opacity: 0;
+  opacity: 1;
   transition: opacity 250ms ease-in;
 }
 
@@ -192,7 +192,7 @@ a:visited {
   font-family: Arial, Helvetica, sans-serif;
 
 }
-.more-stuff-grid h1{
+.more-stuff-grid .about-heading{
   position: absolute;
   top: 1rem;
   left: 50%;
@@ -209,14 +209,14 @@ a:visited {
 }
 .from-left {
   grid-column: 2 / 3;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .from-right {
   grid-column: 3 / 4;
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .from-left,
@@ -225,7 +225,7 @@ a:visited {
   transition: opacity 250ms ease-in, transform 400ms ease-in;
   transition: opacity 250ms ease-in, transform 400ms ease-in,
   -webkit-transform 400ms ease-in;
-  opacity: 0;
+  opacity: 1;
 }
 
 .from-left.appear,
@@ -280,7 +280,7 @@ body {
 .row .col button {
   display: inline-block;
   padding: 1rem;
-  background: #529fb8;
+  background: #24677d;
   border: none;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
@@ -433,7 +433,7 @@ img {
     font-size: clamp(1.8rem, 6vw, 3rem);
   }
 
-  .hero h3 {
+  .hero .quote-credit {
     margin-left: 0;
     font-size: 1rem;
   }
@@ -453,7 +453,7 @@ img {
     grid-column: 1;
   }
 
-  .more-stuff-grid h1 {
+  .more-stuff-grid .about-heading {
     position: static;
     grid-row: 1;
   }
@@ -516,7 +516,7 @@ img {
     height: auto;
   }
 
-  .row .col:last-of-type {
+  .row.enhanced .col:last-of-type {
     display: none;
   }
 
@@ -531,4 +531,56 @@ img {
   .row.box-active .show-col {
     display: none;
   }
+}
+
+/* Accessibility: visible navigation, resilient content, and user motion preferences. */
+.skip-link {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  background: #fff;
+  color: #111;
+  transform: translateY(-200%);
+}
+.skip-link:focus { transform: none; }
+a.skip-link:link, a.skip-link:visited { color: #111; }
+:focus-visible {
+  outline: 3px solid #111;
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px #fff;
+}
+main:focus { outline: none; }
+.header a, .footer a { min-height: 44px; }
+.header a { display: flex; align-items: center; }
+.hero .quote-credit { font-size: 1.17rem; font-weight: bold; }
+.about-heading { font-size: 2rem; }
+.skill-heading { font-size: 1.17rem; }
+a.project-link:link, a.project-link:visited { color: #0000a0; text-decoration: underline; }
+.row button { cursor: pointer; min-height: 44px; }
+.row:not(.enhanced) { flex-wrap: wrap; gap: 1rem; }
+.row:not(.enhanced) .col { transform: none; order: initial; }
+.row:not(.enhanced) .col:last-of-type { flex-basis: calc(100% - 2rem); max-width: calc(100% - 2rem); }
+.row:not(.enhanced) button { display: none; }
+@media (max-width: 767.98px) {
+  .row:not(.enhanced) .col:last-of-type { flex-basis: 100%; max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+@media (forced-colors: active) {
+  :focus-visible { outline: 3px solid Highlight; }
+  .row button { border: 1px solid ButtonText; }
+}
+/* Keep visual navigation order consistent with keyboard and reading order. */
+.header ul { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.header ul li { float: none; margin: 0; }
+.header ul .brand { float: none; margin-right: auto; }
+@media (max-width: 927px) {
+  .header ul { gap: 1rem; }
+  .header ul .brand { margin-right: 0; }
+}
+@media (max-width: 767.98px) {
+  .row.enhanced.box-active .col:first-child { display: none; }
 }
